@@ -1,0 +1,242 @@
+@font-face {
+	font-family: 'layiji_sarangheyoregular';
+	src: url('layijisarangheyo-webfont.eot');
+	src: url('layijisarangheyo-webfont.eot?#iefix') format('embedded-opentype'),
+	url('layijisarangheyo-webfont.woff2') format('woff2'),
+	url('layijisarangheyo-webfont.woff') format('woff'),
+	url('layijisarangheyo-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+html{
+	background-color: #767676;
+}
+body{
+	font-family: Consolas, monaco, monospace;
+	width:100%;
+}
+h1{
+	font-size: 100px;
+	margin:5px 5px 5px 5px; 
+}
+h2{
+	font-size: 40px;
+	margin:5px 5px 5px 5px; 
+
+}
+#intro,#profile,#skill,#exp{
+	position : absolute;
+	border:2px solid white;
+	width: 90%;
+	height: 700px;
+
+}
+.tagName{
+	word-break : break-all;
+	display:
+	block;
+	width:6px;
+	font-size : 25px; 
+	font-weight: bold;
+	margin-left: 3px;
+	color:#006666;
+	height: 600px;
+}
+#container{
+	margin-top: 100px;
+}
+#intro{
+	margin-left: 100px;
+	background-color: #FF9999;
+	z-index: 5;
+}
+#profile{
+	margin-left: 75px;
+	background-color: #FFCC99;
+	z-index: 4;
+}
+#skill{
+	margin-left: 50px;
+	background-color: #FFFF99;
+	z-index: 3;
+}
+#exp{
+	margin-left: 25px;
+	background-color: #CCFF99;
+	z-index: 2;
+}
+.tag{
+	display: inline-block;
+	width:20px;
+}
+.tag:hover{
+	cursor: pointer;
+	cursor: hand;
+}
+.content{
+	display: inline-block;
+	position: relative;
+	vertical-align:top;
+	width:80%;
+}
+#intro>.content{
+	font-family: layiji_sarangheyoregular;
+	color: white;
+}
+#quote{
+	position:absolute;
+	top:50px;
+	left:100px;
+}
+#profilePic{
+	position:absolute;
+	top:100px;
+	left :850px;
+	transform: rotate(20deg);
+}
+#profilePic>img{
+	border: 10px solid white;
+}
+#contactButtonDiv{
+	position: absolute;
+	top:300px;
+	left :250px;
+}
+#contactButton{
+	font-size: 50px;
+}
+#profileContent{
+	position:absolute;
+	top: 30px;
+	left :100px;
+	width :90%;
+	font-size: 20px;
+	color: #5C5B5B;
+}
+#educationPic1{
+	position: absolute;
+	right:-230px;
+	top:360px;
+	transform: rotate(20deg);
+}
+#educationPic1>img{
+	border: 5px solid white;
+}
+#educationPic2{
+	position: absolute;
+	right:-40px;
+	top:410px;
+	transform: rotate(-10deg);
+}
+#educationPic2>img{
+	border: 5px solid white;
+}
+#skillContent{
+	position:absolute;
+	top: 30px;
+	left :100px;
+	width :30%;
+	font-size: 20px;
+	color: #5C5B5B;
+}
+#portContent{
+	position:absolute;
+	top: 30px;
+	left: 500px;
+	width :60%;
+	font-size: 20px;
+	color: #5C5B5B;
+}
+#expPicContent{
+	position:absolute;
+	top: 30px;
+	left: 500px;
+	width :60%;
+	font-size: 20px;
+	color: #5C5B5B;
+}
+#port1{
+	position: absolute;
+	left:120px;
+	top:80px;
+}
+#port2{
+	position: absolute;
+	left:500px;
+	top:200px;
+	transform: rotate(10deg);
+}
+#port3{
+	position: absolute;
+	left:100px;
+	top:300px;
+	transform: rotate(-10deg);
+}
+#port1>img,#port2>img,#port3>img{
+	border: 5px solid #494B4D;
+}
+#expContent{
+	position:absolute;
+	top: 30px;
+	left: 200px;
+	width :50%;
+	font-size: 20px;
+	color: #5C5B5B;
+}
+#expPic1{
+	position: absolute;
+	left:780px;
+	top:70px;
+}
+#expPic2{
+	position: absolute;
+	left:600px;
+	top:230px;
+	transform: rotate(10deg);
+}
+#expPic3{
+	position: absolute;
+	left:530px;
+	top:360px;
+	transform: rotate(-10deg);
+}
+.slide{
+	animation-name:slide;
+	animation-duration:2s;
+	animation-fill-mode: forwards;
+    animation-timing-function: ease;
+	-webkit-animation-name:slide;
+    -webkit-animation-duration:2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease;
+
+}
+.slideR{
+	animation-name:slideR;
+	animation-duration:2s;
+	animation-fill-mode: forwards;
+    animation-timing-function: ease;
+	-webkit-animation-name:slide;
+    -webkit-animation-duration:2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease;
+	
+}
+@keyframes slide{
+	from{left: 1480px;}
+	to{left: 0px;}	
+}
+@-webkit-keyframes slide{
+	from{left: 1480px;}
+	to{left: 0px;}
+}
+@keyframes slide{
+	from{left: 0px;}
+	to{left: 1480px;}
+	
+}
+@-webkit-keyframes slide{
+	from{left: 0px;}
+	to{left: 1480px;}
+}

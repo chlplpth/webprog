@@ -1,0 +1,31 @@
+.card{
+	text-align: center;
+	background-color: #DEC371;
+	border:  2px solid #938172;
+}
+.row{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+body{
+	background-color: #E7E0D2;
+}
+#searchBox{
+	background-color: #E7E0D2;
+	border-color: white;	
+}
+#searchButton{
+	border: 1px solid white;
+}
+#searchSection{
+	margin-top : 20px;
+	text-align : center;
+}
+a,a:link,a:visited,a:active {
+	text-decoration: none;
+	color : black;
+}
+a:hover{
+	color: white;
+
+}
