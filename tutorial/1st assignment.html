@@ -1,0 +1,172 @@
+<html>
+
+<head>
+	<title>TEST02</title>
+	<meta charset="UTF-8" />
+	<style type="text/css">
+		
+		body
+		{
+			font-family: "Sukhumvit Set";
+			background-color: black;
+		}
+		h1
+		{
+			color: #FF0080;
+			text-align: center;
+			margin-top: 50px;
+			font-family: "ZoodHardSell2";
+			font-size: 100;
+			margin: 30 0 0 0;
+			padding:0;
+		}
+
+		h2
+		{
+			text-align: center;
+			color: white;
+			margin: 0 0 30 0;
+			padding: 0;
+		}
+
+		xmp
+		{
+			padding: 10 10 10 10;
+			background-color: #777777;
+			color: #CEF6EC;
+		}
+
+
+		@-webkit-keyframes fadeInDown {
+		  from {
+		    opacity: 0;
+		    -webkit-transform: translate3d(0, -100%, 0);
+		    transform: translate3d(0, -100%, 0);
+		  }
+
+		  to {
+		    opacity: 1;
+		    -webkit-transform: none;
+		    transform: none;
+		  }
+		}
+
+		.fadeInDown {
+			-webkit-animation-duration: 1s;
+		  animation-duration: 1s;
+		  -webkit-animation-fill-mode: both;
+		  animation-fill-mode: both;
+		  -webkit-animation-name: fadeInDown;
+		  animation-name: fadeInDown;
+		}
+		#border
+		{
+			padding: 80px;
+			background-color: #E6E6E6;
+		}
+		#borderR
+		{
+    	float: left;
+  		position: top;
+			margin-left: 25px;
+			height: 300px;
+			width: 500px;
+		}
+
+		#rect {
+	    width: 200px;
+	    height: 200px;
+	    background-color: black;
+	    position: relative;
+	    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+	    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	    -webkit-animation-iteration-count: 10000; /* Chrome, Safari, Opera */
+		}
+		/* Chrome, Safari, Opera */
+		@-webkit-keyframes example {
+	    0%   {background-color:#FA5882; left:0px; top:0px; width: 100px; height: 100px;}
+	    25%  {background-color:#AC58FA; left:200px; top:0px; width: 200px; height: 200px;}
+	    50%  {background-color:#2E64FE; left:200px; top:200px; width: 100px; height: 100px;}
+	    75%  {background-color:#2ECCFA; left:0px; top:200px; width: 200px; height: 200px;}
+	    100% {background-color:#FA5882; left:0px; top:0px; width: 100px; height: 100px;}
+		}
+
+		#content{
+			margin-left: 500px;
+			padding: 20px;
+			width: 750px;
+			background-color: white;
+			box-shadow: 0px 0px 40px black;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 class="fadeInDown">CSS TUTORIAL</h1>
+	<h2>Set animation to rectangle</h2>
+	<div id="border">
+		<div id="borderR">
+			<div id="rect">
+			</div>
+		</div>
+		<div id="content">
+			<h3>STEPS :</h3>
+			<ol>
+				<li>สร้างสี่เหลี่ยมโดยใช้ <xmp><div id="rect"></div></xmp> </li>
+				<li>ทำการกำหนด style เริ่มต้น
+					<br/><xmp><style type="text/css">
+	#rect 
+	{
+		width: 200px;
+		height: 200px;
+		background-color: black;
+		position: relative;
+	}
+</style>
+				</xmp></li>
+				<li>กำหนดการเคลื่อนไหว
+				<br/><xmp><style type="text/css">
+	#rect 
+	{
+		width: 200px;
+		height: 200px;
+		background-color: black;
+		position: relative;
+	}
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes example 
+	{
+    0%   {background-color:#FA5882; left:0px; top:0px; width: 100px; height: 100px;}
+    25%  {background-color:#AC58FA; left:200px; top:0px; width: 200px; height: 200px;}
+    50%  {background-color:#2E64FE; left:200px; top:200px; width: 100px; height: 100px;}
+    75%  {background-color:#2ECCFA; left:0px; top:200px; width: 200px; height: 200px;}
+    100% {background-color:#FA5882; left:0px; top:0px; width: 100px; height: 100px;}
+	}
+</style>
+				</xmp></li>
+
+			<li>สามารถกำหนดสีของกล่อง ตำแหน่งและขนาดได้ที่ <br/>
+			<xmp>	background-color: ; left: ; top: ; width: ; height: ;</xmp>ตามลำดับ</li><br/>	
+			<li>นำการเคลื่อนไหวที่กำหนดในข้อ 3. ไปใส่รวมกับ style ของ rect<br/>
+			<xmp><style type="text/css">
+	#rect 
+	{
+		width: 200px;
+		height: 200px;
+		background-color: black;
+		position: relative;
+	  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+	  -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	  -webkit-animation-iteration-count: 10000; /* Chrome, Safari, Opera */
+	}
+	
+</style>
+				</xmp>
+			</li>
+		</ol>
+		
+		</div>
+	</div>
+</body>
+
+</html>

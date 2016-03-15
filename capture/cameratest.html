@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stickerbooth.css"/>
+    <script src="jquery-1.10.1.min.js"></script>
+    
+    <title>Sticker Booth</title>
+</head>
+<body>
+<div id="wrapper">
+    <div id="framing">
+        <canvas id="photo" width="800" height="600"></canvas>
+        <div id="camera"></div>
+        <div id="countdown"></div>
+        <div id="overlay" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div id="camera-control">
+        <button>Shoot</button>
+    </div>
+    <div id="toolbar">
+        <ul id="sticker-list">
+            <li><img src="sticker/glasses_01.png" class ="stickerOnList" draggable="true"
+ondragstart="drag(event)"/></li>
+            <li><img src="sticker/dognose.png" class ="stickerOnList" draggable="true"
+ondragstart="drag(event)"/></li>
+            <li><img src="sticker/tongue.png" class ="stickerOnList" draggable="true"
+ondragstart="drag(event)"/></li>
+            <li><img src="sticker/eye_01.png" class ="stickerOnList" draggable="true"
+ondragstart="drag(event)"/></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="camera.js"></script>
+<script src="capture.js"></script>
+</html>

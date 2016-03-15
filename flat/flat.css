@@ -1,0 +1,226 @@
+body{
+	background-color: #71848B;
+	font-family : "Comic Sans MS", cursive, sans-serif;
+	transform-origin: 0 0;	
+	transform : rotateX(40deg) rotateZ(-10deg);
+}
+#title{
+	color : white;
+	background-color : #404243;
+	width :110%;
+	margin-left : -40px;
+	padding-left : 0px;
+	height : 150px;
+	margin-top : 100px;
+}
+#titletext{
+	font-size : 4em;
+	margin-left : 250px;
+}
+#menugroup{
+	margin-left : 250px;
+	margin-top : 80px;
+	float : left;
+	width : 300px;
+}
+.menu{
+	width : 220px;
+	height : 110px;
+	margin-bottom : 10px;
+
+}
+
+#left1{
+	width: 40px;
+	height: 220px;
+	margin-top: -84px;
+	margin-left: -23px;
+	background-color: #666600;
+	transform: rotateX(-60deg) rotateY(80deg);
+}
+#bot1{
+	width: 223px;
+	height: 40px;
+	background-color: #666600;
+	margin-top: -68px;
+	transform-origin: 0 0;
+	transform: rotateY(-10deg) rotateX(50deg);
+	position:relative;
+	z-index: -1;
+}
+#left2{
+	width: 40px;
+	height: 220px;
+	margin-top: -84px;
+	margin-left: -23px;
+	background-color: #336142;
+	transform: rotateX(-60deg) rotateY(80deg);
+}
+#bot2{
+	width: 223px;
+	height: 40px;
+	background-color: #336142;
+	margin-top: -68px;
+	transform-origin: 0 0;
+	transform: rotateY(-10deg) rotateX(50deg);
+}
+#left3{
+	width: 40px;
+	height: 220px;
+	margin-top: -84px;
+	margin-left: -23px;
+	background-color: #305966;
+	transform: rotateX(-60deg) rotateY(80deg);
+}
+#bot3{
+	width: 223px;
+	height: 40px;
+	background-color: #305966;
+	margin-top: -68px;
+	transform-origin: 0 0;
+	transform: rotateY(-10deg) rotateX(50deg);
+}
+#left4{
+	width: 40px;
+	height: 220px;
+	margin-top: -84px;
+	margin-left: -23px;
+	background-color: #284766;
+	transform: rotateX(-60deg) rotateY(80deg);
+}
+#bot4{
+	width: 223px;
+	height: 40px;
+	background-color: #284766;
+	margin-top: -68px;
+	transform-origin: 0 0;
+	transform: rotateY(-10deg) rotateX(50deg);
+}
+#box1{
+	position: relative;
+	background-color : #cccc00;
+	z-index: -1;
+}
+#box1:hover{
+	background-color: #75F786;
+}
+#box2{
+	position: relative;
+	background-color : #93DEA6;
+	z-index: 0;
+}
+#box2:hover{
+	background-color: #75F786;
+}
+#box3{
+	position: relative;
+	background-color : #4ABABB;
+	z-index: 1;
+}
+#box3:hover{
+	background-color: #2FC0C0;
+}
+#box4{
+	position: relative;
+	background-color : #75ADBC;
+	z-index: 2;
+}
+#box4:hover{
+	background-color: #2FC0C0;
+}
+.btext{
+	color : white;
+	margin-top : 20px;
+	margin-left : 20px;
+	display : inline-block;
+}
+#pie1{
+	width : 220px;
+	height : 220px;
+	border-radius: 50%;
+	background-color : #F1AF10;
+	display : inline-block;
+
+}
+#pie2{
+	width : 220px;
+	height : 220px;
+	border-radius: 50%;
+	margin-left: 30px;
+	background-color : #F1AF10;
+	display : inline-block;
+
+}
+#progresspie1-1{
+	height : 220px;
+	width : 110px;
+	margin-left: 110px;
+	border-radius: 0 110px 110px 0;
+	background-color: #3D8A6C;
+}
+#progresspie1-2{
+	height : 220px;
+	width : 110px;
+	margin-left: 110px;
+	margin-top: -220px;
+	border-radius: 0 110px 110px 0;
+	background-color: #3D8A6C;
+	transform-origin: 0 50%;	
+	transform : rotate(20deg);
+}
+
+#progresspie2-1{
+	height : 220px;
+	width : 110px;
+	margin-left: 110px;
+	border-radius: 0 110px 110px 0;
+	background-color: #3D8A6C;
+
+}
+#progresspie2-2{
+	height : 220px;
+	width : 110px;
+	margin-left: 110px;
+	margin-top: -220px;
+	border-radius: 0 110px 110px 0;
+	background-color: #F1AF10;
+	transform-origin: 0 50%;	
+	transform : rotate(90deg);
+}
+#loginpanel{
+	margin-top : 100px;
+	margin-left : 650px;
+}
+#logingroup{
+	margin-top : 70px;
+	color :white;
+	font-size: 2em;
+}
+#username,#password{
+	font-size: 1.5em;
+	border: none;
+	border-bottom: 2px solid white;
+	background: transparent;
+}
+#loginButton{
+	margin-left: 50px;
+	font-size: 1em;
+	font-family : "Comic Sans MS", cursive, sans-serif;
+	color : white;
+	width : 500px;
+	height : 50px;
+	border-radius:30px 30px 30px 30px;
+	background: transparent;
+}
+@keyframes loginBut {
+    from {background-color: inherit;}
+    to {background-color: #75F786;}
+}
+#loginButton:hover{
+	margin-left: 25px;
+	margin-top: 10px;
+	width : 550px;
+	height : 60px;
+	animation-name: loginBut;
+    animation-duration: 2s;
+}
