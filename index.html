@@ -1,10 +1,134 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello</title>
+	<title>Milotic</title>
+	<meta property="og:title" content="Chalampol L. || 5530096021" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Web Prog 2015">
+	<meta property="og:url" content="http://milotic.azurewebsites.net/" />
+	<meta property="og:image" content="http://milotic.azurewebsites.net/ogpic.jpg" />
+	<style>
+		body{
+			background-color: #c2d6d6;
+		}
+		.box{
+			display: inline-block;
+			width :400px;
+			height :200px;
+			vertical-align:middle;
+			background-color: #c2d6d6;
+			color:white;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-size: 20px;
+			border: 8px solid white;
+			padding: 0px 0px 0px 0px;
+			margin :0px 0px 0px 0px;
+		}
+		.box:hover{
+			border: 8px dashed white;
+		}
+		.tag,.image{
+			display: inline-block;
+			
+		}
+		.tag{	
+			margin-left: 10px;
+			width :160px;
+		}
+		.image{
+			position :relative;
+			top:10%;
+			width :180px;
+		}
+		img{
+			border:2px solid white;
+		}
+		#olaf{
+			position : absolute;
+			top:9%;
+			left :950px;
+			border:7px solid white;
+			transform: rotate(10deg);
+		}
+		#olaf:hover{
+			border:7px dashed white;
+		}
+		#box6{
+			position :relative;
+			left :500px;
+			top : -150px;
+			padding: 0px 0px 0px 0px;
+			color:white;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-size: 100px;
+		}
+		.container{
+			margin-left: 40px;
+			display: inline-block;
+		}
+	</style>
 </head>
 <body>
-Hello.
-It's me.
+	<div class ="container">
+		
+		<div id = "box1" class ="box" onclick="location.href='http://milotic.azurewebsites.net/tutorial/tutorial.html';">
+			<div class = "tag">
+				CSS Tutorial
+			</div>
+			<div class ="image">
+				<img src="tutorial.png" width="200px">
+			</div>
+		</div>
+		
+		
+		<div id = "box2" class ="box" onclick="location.href='http://milotic.azurewebsites.net/flat/itsFlat.html';">
+			<div class = "tag">
+				Flat
+			</div>
+			<div class ="image">
+				<img src="flat.png" width="200px">
+			</div>
+		</div>
+		
+		<br>
+		
+		<div id = "box3" class ="box" onclick="location.href='http://milotic.azurewebsites.net/capture/cameratest.html';">
+			<div class = "tag">
+				Photobooth
+			</div>
+			<div class ="image">
+				<img src="photo.png" width="200px">
+			</div>
+		</div>
+		
+		
+		<div id = "box4" class ="box" onclick="location.href='http://milotic.azurewebsites.net/knowledge/knowledgeSearch.html';">
+			<div class = "tag">
+				KnowledgeSearch
+			</div>
+			<div class ="image">
+				<img src="knowledge.png" width="200px">
+			</div>
+		</div>
+		
+		<br>
+		
+		<div id = "box5" class ="box" onclick="location.href='http://milotic.azurewebsites.net/page/page.html';">
+			<div class = "tag">
+				Resume
+			</div>
+			<div class ="image">
+				<img src="resume.png" width="200px">
+			</div>
+		</div>
+		
+	</div>
+	<div id = "box6">
+		WEB PROG 2015
+	</div>
+	<div>
+		<img src="olaf.png" id = "olaf" height="400px">
+	</div>
+
 </body>
 </html>
